@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#0D0F14" />
+<title>TripIQ — Contact Us</title>
+<meta name="description" content="Get in touch with Britten Labs, the team behind TripIQ." />
+<link rel="canonical" href="https://gettripiq.app/contact" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #0D0F14; color: #E8ECF1; line-height: 1.7;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  a { color: #00E5A0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  :root {
+    --bg: #0D0F14; --bg-elevated: #151821; --surface: #1B1F2A; --border: #2A2F3D;
+    --text: #E8ECF1; --text-muted: #8892A6; --text-faint: #5A6378;
+    --teal: #00E5A0; --teal-dim: rgba(0,229,160,0.12); --teal-text: #5EE8B8;
+    --display: 'Space Grotesk', sans-serif; --mono: 'JetBrains Mono', monospace;
+  }
+  .container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 20px; }
+  @media (min-width: 768px) { .container { padding: 0 32px; } }
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(13,15,20,0.85); backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px; max-width: 1180px; margin: 0 auto; padding: 0 20px;
+  }
+  @media (min-width: 768px) { .nav-inner { padding: 0 32px; } }
+  .logo {
+    font-family: var(--display); font-weight: 700; font-size: 20px;
+    letter-spacing: -0.02em; color: var(--text);
+    display: flex; align-items: center; gap: 8px; text-decoration: none;
+  }
+  .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 12px var(--teal); }
+  .nav-cta {
+    background: var(--teal); color: #0D0F14; font-weight: 600; font-size: 13px;
+    padding: 9px 16px; border-radius: 999px; border: none; text-decoration: none;
+  }
+  .contact-hero {
+    padding: 64px 0 48px; text-align: center;
+  }
+  @media (min-width: 768px) { .contact-hero { padding: 96px 0 64px; } }
+  .contact-title {
+    font-family: var(--display); font-size: clamp(30px,6vw,44px); font-weight: 600;
+    line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 14px;
+  }
+  .contact-sub {
+    font-size: 17px; color: var(--text-muted); max-width: 500px;
+    margin: 0 auto 48px; line-height: 1.55;
+  }
+  .contact-cards {
+    display: grid; grid-template-columns: 1fr; gap: 16px;
+    max-width: 600px; margin: 0 auto; padding-bottom: 80px;
+  }
+  @media (min-width: 600px) { .contact-cards { grid-template-columns: repeat(2, 1fr); } }
+  .contact-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 28px 24px; text-align: center;
+    transition: border-color 0.2s ease;
+  }
+  .contact-card:hover { border-color: var(--teal); }
+  .contact-card-icon {
+    width: 48px; height: 48px; margin: 0 auto 16px;
+    background: var(--teal-dim); border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .contact-card-title {
+    font-family: var(--display); font-size: 17px; font-weight: 600;
+    margin-bottom: 6px; color: var(--text);
+  }
+  .contact-card-text {
+    font-size: 14px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.5;
+  }
+  .contact-card-link {
+    display: inline-block;
+    font-family: var(--mono); font-size: 13px; font-weight: 500;
+    color: var(--teal); letter-spacing: 0.02em;
+  }
+  .contact-faq {
+    max-width: 600px; margin: 0 auto;
+    padding: 40px 0 80px;
+    border-top: 1px solid var(--border);
+  }
+  .contact-faq-title {
+    font-family: var(--display); font-size: 22px; font-weight: 600;
+    margin-bottom: 24px; color: var(--text);
+  }
+  .contact-faq-item {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px; margin-bottom: 10px;
+  }
+  .contact-faq-q {
+    font-family: var(--display); font-size: 15px; font-weight: 600;
+    color: var(--text); margin-bottom: 8px;
+  }
+  .contact-faq-a {
+    font-size: 14px; color: var(--text-muted); line-height: 1.6;
+  }
+  footer {
+    border-top: 1px solid var(--border); padding: 40px 0 56px; background: var(--bg);
+  }
+  .footer-inner {
+    display: flex; flex-direction: column; gap: 24px;
+    max-width: 1180px; margin: 0 auto; padding: 0 20px;
+  }
+  @media (min-width: 768px) { .footer-inner { flex-direction: row; justify-content: space-between; align-items: center; padding: 0 32px; } }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 16px 24px; }
+  .footer-links a { font-size: 13px; color: var(--text-muted); text-decoration: none; }
+  .footer-links a:hover { color: var(--teal); }
+  .footer-copy { font-size: 12px; color: var(--text-faint); font-family: var(--mono); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="logo"><span class="logo-dot"></span>TripIQ</a>
+    <a href="/" class="nav-cta">Back to home</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="contact-hero">
+    <h1 class="contact-title">Get in touch.</h1>
+    <p class="contact-sub">Have a question, found a bug, or want to request a new platform? We'd like to hear from you.</p>
+  </div>
+
+  <div class="contact-cards">
+    <a href="mailto:brittenlabs@gmail.com" class="contact-card" style="text-decoration:none">
+      <div class="contact-card-icon">✉️</div>
+      <div class="contact-card-title">Email us</div>
+      <div class="contact-card-text">General questions, feedback, partnership inquiries, or anything else.</div>
+      <span class="contact-card-link">brittenlabs@gmail.com</span>
+    </a>
+
+    <a href="mailto:brittenlabs@gmail.com?subject=TripIQ%20Bug%20Report" class="contact-card" style="text-decoration:none">
+      <div class="contact-card-icon">🐛</div>
+      <div class="contact-card-title">Report a bug</div>
+      <div class="contact-card-text">Something broken? Include your device model, Android version, and what happened.</div>
+      <span class="contact-card-link">Send bug report</span>
+    </a>
+
+    <a href="mailto:brittenlabs@gmail.com?subject=TripIQ%20Platform%20Request" class="contact-card" style="text-decoration:none">
+      <div class="contact-card-icon">🚗</div>
+      <div class="contact-card-title">Request a platform</div>
+      <div class="contact-card-text">Using a gig platform we don't support yet? Tell us which one and your country.</div>
+      <span class="contact-card-link">Request platform</span>
+    </a>
+
+    <a href="mailto:brittenlabs@gmail.com?subject=TripIQ%20Billing%20Support" class="contact-card" style="text-decoration:none">
+      <div class="contact-card-icon">💳</div>
+      <div class="contact-card-title">Billing support</div>
+      <div class="contact-card-text">Questions about your Pro subscription, refunds, or payment issues.</div>
+      <span class="contact-card-link">Get billing help</span>
+    </a>
+  </div>
+
+  <div class="contact-faq">
+    <h2 class="contact-faq-title">Before you reach out</h2>
+
+    <div class="contact-faq-item">
+      <div class="contact-faq-q">How do I cancel my subscription?</div>
+      <div class="contact-faq-a">Open the Google Play Store → tap your profile icon → Payments & subscriptions → Subscriptions → find TripIQ → Cancel. We can't cancel subscriptions on your behalf — they're managed through Google Play.</div>
+    </div>
+
+    <div class="contact-faq-item">
+      <div class="contact-faq-q">The analysis shows wrong numbers. What do I do?</div>
+      <div class="contact-faq-a">Check your expense profile first — make sure your fuel price, consumption, and platform fee are set correctly for your currency and region. If the extraction itself is wrong (wrong platform or pay amount detected), email us the screenshot and we'll investigate.</div>
+    </div>
+
+    <div class="contact-faq-item">
+      <div class="contact-faq-q">My platform isn't recognized. Will you add it?</div>
+      <div class="contact-faq-a">TripIQ currently supports Uber, Lyft, Grab, DoorDash, Uber Eats, and Foodpanda. It will also attempt to analyze screenshots from unrecognized platforms. Send us the platform name and your country and we'll prioritize based on demand.</div>
+    </div>
+
+    <div class="contact-faq-item">
+      <div class="contact-faq-q">I lost my trip history. Can you recover it?</div>
+      <div class="contact-faq-a">Trip history is stored on your device only — we don't have access to it. If you cleared the App's data, uninstalled, or switched phones, the data is gone. This is by design for your privacy.</div>
+    </div>
+
+    <div class="contact-faq-item">
+      <div class="contact-faq-q">How fast do you respond?</div>
+      <div class="contact-faq-a">We're a small team. Expect a reply within 24–48 hours on business days. Bug reports and billing issues get priority.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="logo"><span class="logo-dot"></span>TripIQ</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/contact">Contact</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </div>
+    <div class="footer-copy">© 2026 Britten Labs</div>
+  </div>
+</footer>
+
+</body>
+</html>
