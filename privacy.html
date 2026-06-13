@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#0D0F14" />
+<title>TripIQ — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for TripIQ by Britten Labs. How we handle your data." />
+<link rel="canonical" href="https://gettripiq.app/privacy" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #0D0F14;
+    color: #E8ECF1;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a { color: #00E5A0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  :root {
+    --bg: #0D0F14;
+    --bg-elevated: #151821;
+    --surface: #1B1F2A;
+    --border: #2A2F3D;
+    --text: #E8ECF1;
+    --text-muted: #8892A6;
+    --text-faint: #5A6378;
+    --teal: #00E5A0;
+    --teal-dim: rgba(0, 229, 160, 0.12);
+    --teal-text: #5EE8B8;
+    --display: 'Space Grotesk', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  .container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 20px; }
+  @media (min-width: 768px) { .container { padding: 0 32px; } }
+
+  /* NAV */
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(13, 15, 20, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px; max-width: 1180px; margin: 0 auto; padding: 0 20px;
+  }
+  @media (min-width: 768px) { .nav-inner { padding: 0 32px; } }
+  .logo {
+    font-family: var(--display);
+    font-weight: 700; font-size: 20px;
+    letter-spacing: -0.02em; color: var(--text);
+    display: flex; align-items: center; gap: 8px;
+    text-decoration: none;
+  }
+  .logo-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--teal); box-shadow: 0 0 12px var(--teal);
+  }
+  .nav-cta {
+    background: var(--teal); color: #0D0F14;
+    font-weight: 600; font-size: 13px;
+    padding: 9px 16px; border-radius: 999px;
+    border: none; cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* CONTENT */
+  .policy-header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+  @media (min-width: 768px) { .policy-header { padding: 72px 0 40px; } }
+  .policy-title {
+    font-family: var(--display);
+    font-size: clamp(30px, 6vw, 44px);
+    font-weight: 600; line-height: 1.1;
+    letter-spacing: -0.025em;
+    margin-bottom: 12px;
+  }
+  .policy-meta {
+    font-family: var(--mono);
+    font-size: 12px; color: var(--text-faint);
+    letter-spacing: 0.06em;
+  }
+
+  .policy-body { padding-bottom: 80px; }
+
+  .policy-body h2 {
+    font-family: var(--display);
+    font-size: 22px; font-weight: 600;
+    margin: 40px 0 12px;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+  .policy-body h3 {
+    font-family: var(--display);
+    font-size: 17px; font-weight: 600;
+    margin: 28px 0 8px;
+    color: var(--teal-text);
+  }
+  .policy-body p {
+    font-size: 15px; color: var(--text-muted);
+    margin-bottom: 14px; line-height: 1.7;
+  }
+  .policy-body ul {
+    list-style: none; margin: 0 0 14px 0; padding: 0;
+  }
+  .policy-body ul li {
+    font-size: 15px; color: var(--text-muted);
+    padding-left: 20px; margin-bottom: 8px;
+    position: relative; line-height: 1.6;
+  }
+  .policy-body ul li::before {
+    content: ''; position: absolute;
+    left: 0; top: 10px;
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--teal);
+  }
+  .policy-body strong { color: var(--text); font-weight: 600; }
+
+  .data-table {
+    width: 100%; border-collapse: collapse;
+    margin: 16px 0 24px; font-size: 14px;
+  }
+  .data-table th {
+    text-align: left; padding: 10px 14px;
+    background: var(--surface); color: var(--teal-text);
+    font-family: var(--mono); font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+  }
+  .data-table td {
+    padding: 10px 14px; color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+
+  .highlight-box {
+    background: var(--teal-dim);
+    border: 1px solid rgba(0, 229, 160, 0.2);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 20px 0;
+  }
+  .highlight-box p {
+    color: var(--teal-text); margin-bottom: 0;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 40px 0 56px; background: var(--bg);
+  }
+  .footer-inner {
+    display: flex; flex-direction: column; gap: 24px;
+    max-width: 1180px; margin: 0 auto; padding: 0 20px;
+  }
+  @media (min-width: 768px) {
+    .footer-inner { flex-direction: row; justify-content: space-between; align-items: center; padding: 0 32px; }
+  }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 16px 24px; }
+  .footer-links a { font-size: 13px; color: var(--text-muted); text-decoration: none; }
+  .footer-links a:hover { color: var(--teal); }
+  .footer-copy { font-size: 12px; color: var(--text-faint); font-family: var(--mono); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="logo"><span class="logo-dot"></span>TripIQ</a>
+    <a href="/" class="nav-cta">Back to home</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="policy-header">
+    <h1 class="policy-title">Privacy Policy</h1>
+    <div class="policy-meta">Effective date: June 13, 2026 · Last updated: June 13, 2026</div>
+  </div>
+
+  <div class="policy-body">
+
+    <p>Britten Labs ("we," "us," or "our") operates the TripIQ mobile application (the "App"). This Privacy Policy explains what data we collect, how we use it, and your choices regarding your information.</p>
+
+    <div class="highlight-box">
+      <p><strong>The short version:</strong> TripIQ does not require an account. Your trip history stays on your phone. Screenshots are processed to extract trip data and then discarded. We do not sell your data to anyone.</p>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+
+    <h3>1.1 Screenshots (Photos)</h3>
+    <p>When you analyze a trip offer, the screenshot you provide is transmitted from your device to our cloud-based analysis service. The screenshot is used solely to extract trip details (platform, gross pay, distance, and estimated time). Screenshots are processed ephemerally — they are not stored, logged, or retained after the analysis is complete.</p>
+
+    <h3>1.2 Trip History (On-Device Only)</h3>
+    <p>Analyzed trip results (platform name, verdict, net earnings calculations) are stored locally on your device using on-device storage (SQLite). This data never leaves your phone. We do not have access to your trip history, and it is not transmitted to any server.</p>
+
+    <h3>1.3 Expense Profile (On-Device Only)</h3>
+    <p>Your expense profile settings (fuel price, consumption, insurance, maintenance, platform fee, currency, and distance unit) are stored locally on your device. This data never leaves your phone.</p>
+
+    <h3>1.4 Analytics Data</h3>
+    <p>We use PostHog, a third-party analytics service, to understand how users interact with the App. PostHog collects:</p>
+    <ul>
+      <li>App interaction events (e.g., screens viewed, buttons tapped, features used)</li>
+      <li>Diagnostic information (e.g., app crashes, error logs)</li>
+      <li>Device type and operating system version</li>
+    </ul>
+    <p>Analytics data is collected to improve the App's performance and user experience. It does not include the content of your screenshots, your trip history, or your expense profile.</p>
+
+    <h3>1.5 Subscription Data</h3>
+    <p>If you subscribe to TripIQ Pro, your subscription is managed through Google Play Billing and RevenueCat. RevenueCat receives an anonymous device identifier to manage your subscription status. We do not collect your name, email address, payment card details, or Google account information. All payment processing is handled by Google Play.</p>
+
+    <h3>1.6 Device Identifiers</h3>
+    <p>RevenueCat generates an anonymous identifier for your device to track subscription status. PostHog may also use a device identifier for analytics purposes. These identifiers are not linked to your personal identity.</p>
+
+    <h2>2. How We Use Your Information</h2>
+
+    <table class="data-table">
+      <tr>
+        <th>Data Type</th>
+        <th>Purpose</th>
+        <th>Retained</th>
+      </tr>
+      <tr>
+        <td>Screenshots</td>
+        <td>Extract trip details (platform, pay, distance, time) via AI analysis</td>
+        <td>No — processed ephemerally and discarded immediately</td>
+      </tr>
+      <tr>
+        <td>Trip history</td>
+        <td>Display past verdicts, weekly summary, and trip comparisons</td>
+        <td>On your device only — never transmitted</td>
+      </tr>
+      <tr>
+        <td>Expense profile</td>
+        <td>Calculate your personal breakeven rate and net earnings</td>
+        <td>On your device only — never transmitted</td>
+      </tr>
+      <tr>
+        <td>Analytics events</td>
+        <td>Understand feature usage, fix bugs, improve the App</td>
+        <td>Yes — by PostHog on our behalf</td>
+      </tr>
+      <tr>
+        <td>Subscription status</td>
+        <td>Determine whether to grant Pro features</td>
+        <td>Yes — by RevenueCat with anonymous device ID</td>
+      </tr>
+      <tr>
+        <td>Device identifiers</td>
+        <td>Subscription management and analytics</td>
+        <td>Yes — anonymous, not linked to personal identity</td>
+      </tr>
+    </table>
+
+    <h2>3. Third-Party Services</h2>
+    <p>The App uses the following third-party services that may receive data from your device:</p>
+    <ul>
+      <li><strong>Anthropic (Claude API)</strong> — Processes screenshots to extract trip offer data. Screenshots are sent to Anthropic's API for analysis and are subject to <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>. Anthropic does not use API inputs to train its models.</li>
+      <li><strong>Cloudflare Workers</strong> — Our analysis service runs on Cloudflare's infrastructure. Screenshots pass through Cloudflare during processing. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a>.</li>
+      <li><strong>PostHog</strong> — Collects anonymous analytics data about App usage. See <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog's Privacy Policy</a>.</li>
+      <li><strong>RevenueCat</strong> — Manages subscription status using anonymous device identifiers. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</li>
+      <li><strong>Google Play Billing</strong> — Handles all payment processing for subscriptions. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>4. Data Sharing</h2>
+    <p>We share data with third parties only as described in Section 3 above, and only for the purposes of operating the App. Specifically:</p>
+    <ul>
+      <li>Screenshots are shared with Anthropic for AI-based trip data extraction (App functionality).</li>
+      <li>Analytics data is shared with PostHog for usage analysis.</li>
+      <li>Anonymous device identifiers are shared with RevenueCat for subscription management.</li>
+    </ul>
+    <p><strong>We do not sell, rent, or trade your personal information to any third party.</strong></p>
+    <p><strong>We do not display advertising in the App.</strong> No data is shared with advertising networks.</p>
+
+    <h2>5. Data Security</h2>
+    <p>All data transmitted from the App is encrypted in transit using HTTPS/TLS. Screenshots are processed ephemerally and are not stored on our servers. On-device data (trip history and expense profile) is protected by your device's built-in security features.</p>
+
+    <h2>6. Data Retention</h2>
+    <ul>
+      <li><strong>Screenshots:</strong> Not retained. Processed in real-time and immediately discarded.</li>
+      <li><strong>Trip history and expense profile:</strong> Stored on your device only. Deleted when you clear the App's data or uninstall the App.</li>
+      <li><strong>Analytics data:</strong> Retained by PostHog according to their data retention policies.</li>
+      <li><strong>Subscription data:</strong> Retained by RevenueCat and Google Play according to their respective policies.</li>
+    </ul>
+
+    <h2>7. Your Choices</h2>
+    <ul>
+      <li><strong>Delete trip history:</strong> Clear the App's data in your device settings (Settings → Apps → TripIQ → Storage → Clear Data).</li>
+      <li><strong>Cancel subscription:</strong> Manage your subscription through the Google Play Store at any time.</li>
+      <li><strong>Uninstall:</strong> Removing the App deletes all locally stored data (trip history and expense profile).</li>
+    </ul>
+
+    <h2>8. Children's Privacy</h2>
+    <p>TripIQ is not directed at children under the age of 18. We do not knowingly collect information from children. Gig driving is an adult activity, and the App is intended for use by adults only.</p>
+
+    <h2>9. International Users</h2>
+    <p>TripIQ is available globally. If you use the App from outside the United States, your screenshot data may be processed on servers located in the United States and other countries where our service providers operate. By using the App, you consent to this transfer of data.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. If we make material changes, we will update the "Last updated" date at the top of this page. We encourage you to review this page periodically.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or your data, contact us at:</p>
+    <p><strong>Britten Labs</strong><br/>
+    Email: <a href="mailto:brittenlabs@gmail.com">brittenlabs@gmail.com</a><br/>
+    Website: <a href="https://gettripiq.app">gettripiq.app</a></p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="logo"><span class="logo-dot"></span>TripIQ</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="mailto:brittenlabs@gmail.com">Contact</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </div>
+    <div class="footer-copy">© 2026 Britten Labs</div>
+  </div>
+</footer>
+
+</body>
+</html>
