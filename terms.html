@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#0D0F14" />
+<title>TripIQ — Terms of Use</title>
+<meta name="description" content="Terms of Use for TripIQ by Britten Labs." />
+<link rel="canonical" href="https://gettripiq.app/terms" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #0D0F14; color: #E8ECF1; line-height: 1.7;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  a { color: #00E5A0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  :root {
+    --bg: #0D0F14; --bg-elevated: #151821; --surface: #1B1F2A; --border: #2A2F3D;
+    --text: #E8ECF1; --text-muted: #8892A6; --text-faint: #5A6378;
+    --teal: #00E5A0; --teal-dim: rgba(0,229,160,0.12); --teal-text: #5EE8B8;
+    --red: #E24B4A; --red-text: #F08080; --amber: #F5A623;
+    --display: 'Space Grotesk', sans-serif; --mono: 'JetBrains Mono', monospace;
+  }
+  .container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 20px; }
+  @media (min-width: 768px) { .container { padding: 0 32px; } }
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(13,15,20,0.85); backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px; max-width: 1180px; margin: 0 auto; padding: 0 20px;
+  }
+  @media (min-width: 768px) { .nav-inner { padding: 0 32px; } }
+  .logo {
+    font-family: var(--display); font-weight: 700; font-size: 20px;
+    letter-spacing: -0.02em; color: var(--text);
+    display: flex; align-items: center; gap: 8px; text-decoration: none;
+  }
+  .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 12px var(--teal); }
+  .nav-cta {
+    background: var(--teal); color: #0D0F14; font-weight: 600; font-size: 13px;
+    padding: 9px 16px; border-radius: 999px; border: none; text-decoration: none;
+  }
+  .policy-header { padding: 48px 0 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  @media (min-width: 768px) { .policy-header { padding: 72px 0 40px; } }
+  .policy-title {
+    font-family: var(--display); font-size: clamp(30px,6vw,44px); font-weight: 600;
+    line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 12px;
+  }
+  .policy-meta { font-family: var(--mono); font-size: 12px; color: var(--text-faint); letter-spacing: 0.06em; }
+  .policy-body { padding-bottom: 80px; }
+  .policy-body h2 {
+    font-family: var(--display); font-size: 22px; font-weight: 600;
+    margin: 40px 0 12px; color: var(--text); letter-spacing: -0.01em;
+  }
+  .policy-body h3 {
+    font-family: var(--display); font-size: 17px; font-weight: 600;
+    margin: 28px 0 8px; color: var(--teal-text);
+  }
+  .policy-body p { font-size: 15px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.7; }
+  .policy-body ul { list-style: none; margin: 0 0 14px 0; padding: 0; }
+  .policy-body ul li {
+    font-size: 15px; color: var(--text-muted); padding-left: 20px;
+    margin-bottom: 8px; position: relative; line-height: 1.6;
+  }
+  .policy-body ul li::before {
+    content: ''; position: absolute; left: 0; top: 10px;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--teal);
+  }
+  .policy-body strong { color: var(--text); font-weight: 600; }
+  .highlight-box {
+    background: var(--teal-dim); border: 1px solid rgba(0,229,160,0.2);
+    border-radius: 12px; padding: 16px 18px; margin: 20px 0;
+  }
+  .highlight-box p { color: var(--teal-text); margin-bottom: 0; }
+  .warning-box {
+    background: rgba(226,75,74,0.08); border: 1px solid rgba(226,75,74,0.2);
+    border-radius: 12px; padding: 16px 18px; margin: 20px 0;
+  }
+  .warning-box p { color: var(--red-text); margin-bottom: 0; }
+  footer {
+    border-top: 1px solid var(--border); padding: 40px 0 56px; background: var(--bg);
+  }
+  .footer-inner {
+    display: flex; flex-direction: column; gap: 24px;
+    max-width: 1180px; margin: 0 auto; padding: 0 20px;
+  }
+  @media (min-width: 768px) { .footer-inner { flex-direction: row; justify-content: space-between; align-items: center; padding: 0 32px; } }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 16px 24px; }
+  .footer-links a { font-size: 13px; color: var(--text-muted); text-decoration: none; }
+  .footer-links a:hover { color: var(--teal); }
+  .footer-copy { font-size: 12px; color: var(--text-faint); font-family: var(--mono); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="logo"><span class="logo-dot"></span>TripIQ</a>
+    <a href="/" class="nav-cta">Back to home</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="policy-header">
+    <h1 class="policy-title">Terms of Use</h1>
+    <div class="policy-meta">Effective date: June 13, 2026 · Last updated: June 13, 2026</div>
+  </div>
+
+  <div class="policy-body">
+
+    <p>These Terms of Use ("Terms") govern your use of the TripIQ mobile application ("App") operated by Britten Labs ("we," "us," or "our"). By downloading, installing, or using the App, you agree to be bound by these Terms.</p>
+
+    <h2>1. Description of Service</h2>
+    <p>TripIQ is a decision-support tool for gig economy drivers. The App analyzes screenshots of trip offers from ride-hailing and delivery platforms to estimate net earnings based on driver-provided cost inputs. The App provides a "TAKE IT" or "SKIP IT" verdict as a recommendation, not a guarantee of actual earnings.</p>
+
+    <div class="warning-box">
+      <p><strong>Important:</strong> TripIQ provides estimates only. Actual earnings may vary based on factors including but not limited to traffic conditions, route changes, tip adjustments, surge pricing changes, and platform fee modifications that occur after a trip is accepted. TripIQ is not liable for financial decisions made based on its verdicts.</p>
+    </div>
+
+    <h2>2. Eligibility</h2>
+    <p>You must be at least 18 years old to use TripIQ. By using the App, you represent that you meet this age requirement. The App is designed for gig economy drivers and independent contractors.</p>
+
+    <h2>3. Account and Registration</h2>
+    <p>TripIQ does not require an account, registration, or sign-in. No personal information (name, email, phone number) is collected during use. Your data is stored locally on your device.</p>
+
+    <h2>4. Subscriptions and Payments</h2>
+
+    <h3>4.1 Free Tier</h3>
+    <p>TripIQ offers a free tier that includes up to 5 trip analyses per day, access to all supported platforms, a full expense profile, and on-device trip history.</p>
+
+    <h3>4.2 TripIQ Pro</h3>
+    <p>TripIQ Pro is an optional paid subscription that removes the daily analysis limit and provides additional features including weekly intelligence reports and trip comparisons. Subscription options include:</p>
+    <ul>
+      <li>Monthly subscription</li>
+      <li>Annual subscription</li>
+    </ul>
+    <p>Launch pricing may be available for a limited time and will be clearly indicated in the App.</p>
+
+    <h3>4.3 Billing</h3>
+    <p>All payments are processed through Google Play Billing. By subscribing, you agree to Google Play's terms of service. Subscriptions auto-renew unless canceled at least 24 hours before the end of the current billing period.</p>
+
+    <h3>4.4 Cancellation</h3>
+    <p>You may cancel your subscription at any time through the Google Play Store. Upon cancellation, you will retain Pro access until the end of your current billing period. No refunds are provided for partial billing periods.</p>
+
+    <h3>4.5 Price Changes</h3>
+    <p>We reserve the right to change subscription prices. Any price change will take effect at the start of your next billing period after the change. You will be notified of price changes through the Google Play Store.</p>
+
+    <h2>5. Acceptable Use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the App for any unlawful purpose or in violation of any applicable law or regulation</li>
+      <li>Attempt to reverse-engineer, decompile, or disassemble the App</li>
+      <li>Use automated systems, bots, or scripts to access the App or its analysis services</li>
+      <li>Circumvent, disable, or interfere with the App's daily analysis limit or subscription requirements</li>
+      <li>Redistribute, resell, or sublicense the App or its outputs</li>
+      <li>Upload screenshots containing illegal content or content unrelated to gig platform trip offers</li>
+    </ul>
+
+    <h2>6. Intellectual Property</h2>
+    <p>The App, its design, code, user interface, and all associated intellectual property are owned by Britten Labs. You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
+    <p>The TripIQ name, logo, and branding are trademarks of Britten Labs. You may not use these trademarks without our prior written consent.</p>
+
+    <h2>7. Screenshot Processing</h2>
+    <p>When you submit a screenshot for analysis, it is transmitted to our cloud-based processing service. The screenshot is used solely to extract trip offer data and is discarded immediately after processing. We do not store, review, or retain screenshots. By using the App, you confirm that you have the right to submit the screenshots you provide.</p>
+
+    <h2>8. Accuracy and Disclaimers</h2>
+
+    <div class="highlight-box">
+      <p><strong>TripIQ is a decision-support tool, not financial advice.</strong> Verdicts are based on the data extracted from your screenshot and the cost inputs you provide. The accuracy of the verdict depends on the quality of the screenshot, the accuracy of AI extraction, and the accuracy of your expense profile.</p>
+    </div>
+
+    <p>We make no warranty that:</p>
+    <ul>
+      <li>The AI extraction will be 100% accurate for every screenshot</li>
+      <li>All gig platforms and offer formats will be correctly recognized</li>
+      <li>The calculated net earnings will exactly match your actual earnings</li>
+      <li>The App will be available without interruption or error</li>
+    </ul>
+
+    <p><strong>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</strong></p>
+
+    <h2>9. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, Britten Labs shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, revenue, data, or business opportunities, arising out of or related to your use of the App.</p>
+    <p>Our total liability for any claim arising from or related to these Terms or the App shall not exceed the amount you paid for the App in the 12 months preceding the claim, or $50 USD, whichever is greater.</p>
+
+    <h2>10. Indemnification</h2>
+    <p>You agree to indemnify and hold harmless Britten Labs, its affiliates, and their respective officers, directors, employees, and agents from any claims, damages, losses, or expenses (including reasonable attorney's fees) arising from your use of the App, your violation of these Terms, or your violation of any third-party rights.</p>
+
+    <h2>11. Third-Party Services</h2>
+    <p>The App relies on third-party services including Anthropic (AI analysis), Cloudflare (infrastructure), PostHog (analytics), RevenueCat (subscription management), and Google Play (payments and distribution). We are not responsible for the availability, accuracy, or policies of these third-party services. Your use of the App is also subject to the terms and policies of these third parties.</p>
+
+    <h2>12. Platform Trademarks</h2>
+    <p>Uber, Lyft, Grab, DoorDash, Uber Eats, Foodpanda, and other platform names mentioned in the App are trademarks of their respective owners. TripIQ is not affiliated with, endorsed by, or sponsored by any of these platforms. TripIQ is an independent tool that analyzes screenshots provided by users.</p>
+
+    <h2>13. Termination</h2>
+    <p>We reserve the right to suspend or terminate your access to the App at any time, for any reason, including violation of these Terms. Upon termination, your license to use the App is immediately revoked. Data stored locally on your device will remain until you clear the App's data or uninstall the App.</p>
+
+    <h2>14. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. If we make material changes, we will update the "Last updated" date at the top of this page. Your continued use of the App after changes are posted constitutes acceptance of the revised Terms.</p>
+
+    <h2>15. Governing Law</h2>
+    <p>These Terms are governed by and construed in accordance with the laws of the Republic of the Philippines, without regard to its conflict of law provisions. Any disputes arising from these Terms or the App shall be resolved in the courts of Davao City, Philippines.</p>
+
+    <h2>16. Severability</h2>
+    <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect.</p>
+
+    <h2>17. Entire Agreement</h2>
+    <p>These Terms, together with our <a href="/privacy">Privacy Policy</a>, constitute the entire agreement between you and Britten Labs regarding your use of the App and supersede any prior agreements.</p>
+
+    <h2>18. Contact Us</h2>
+    <p>If you have questions about these Terms, contact us at:</p>
+    <p><strong>Britten Labs</strong><br/>
+    Email: <a href="mailto:brittenlabs@gmail.com">brittenlabs@gmail.com</a><br/>
+    Website: <a href="https://gettripiq.app">gettripiq.app</a></p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="logo"><span class="logo-dot"></span>TripIQ</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="mailto:brittenlabs@gmail.com">Contact</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </div>
+    <div class="footer-copy">© 2026 Britten Labs</div>
+  </div>
+</footer>
+
+</body>
+</html>
